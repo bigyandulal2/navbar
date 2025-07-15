@@ -1,0 +1,76 @@
+.header-section {
+  background-color: whitesmoke;
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding-inline: 50px;
+  gap: 20px;
+  position: fixed;
+  z-index: 1;
+}
+.header-nav {
+  background-color: white;
+  flex: 1;
+}
+.nav-items {
+  list-style: none;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  position: relative;
+}
+.item-about {
+  position: absolute;
+  top: 40px;
+  list-style: none;
+  width: 300px;
+  transform: scaleY(0);
+  transition: all 0.5s ease-in-out;
+  transform-origin: top center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-block: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.item-about li {
+  opacity: 0.7;
+  text-align: center;
+  padding: 10px;
+}
+.item-about li:hover {
+  opacity: 0.9;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+.nav-item:hover .item-about {
+  transform: scaleY(1);
+}
+.orange-items {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.orange-item {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: -140px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  list-style: none;
+  transform: scaleY(0);
+  transition: all 0.5s ease-in-out;
+  padding: 15px;
+  transform-origin: top center;
+}
+.orange-items:hover .orange-item {
+  cursor: progress;
+  transform: scaleY(1);
+}
