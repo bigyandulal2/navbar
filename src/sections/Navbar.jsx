@@ -23,6 +23,7 @@ export default function Navbar() {
               </li>
             </ul>
           </li>
+          <li className="nav-contact">Contact</li>
         </ul>
       </nav>
     </section>
